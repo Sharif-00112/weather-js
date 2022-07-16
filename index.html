@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/images/w-icon.jpg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/sky.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <!-- <div class="input-group mb-3">
+                <input id="city-name" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button onclick="searchTemperature()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div> -->
+            <div class="input-group mb-3">
+                <input id="latitude" type="text" class="form-control" placeholder="Enter latitude">
+                <input id="longitude" type="text" class="form-control" placeholder="Enter longitude">
+                <div class="input-group-append">
+                    <button onclick="searchTemperature()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white text-center">"Example: Try latitude: 23.5 & longitude: 90.7 for Narayanganj City"</h3>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1 class="lead" id="weather-condition">Clouds</h1>
+            <h1>Country: <span id="country">Bangladesh</span></h1>
+            <h2>City: <span id="city">Dacca</span></h2>
+            <h3>Temperature: <span id="temperature-real">33.3</span>&deg;C</h3>
+            <h3>Feels like: <span id="temperature-feels">35.7</span>&deg;C</h3>
+            <h3>Wind speed: <span id="wind-speed">3.99</span> KMpH</h3>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
